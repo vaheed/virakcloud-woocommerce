@@ -1,0 +1,70 @@
+.vcw-config {
+  border: 1px solid #e8eaee;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px 0;
+  background: #f9fafc;
+}
+
+.vcw-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.vcw-row label {
+  min-width: 160px;
+  font-weight: 600;
+  color: #333;
+}
+
+.vcw-row select {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 14px;
+}
+
+.vcw-row select:focus {
+  outline: none;
+  border-color: #2271b1;
+  box-shadow: 0 0 0 1px #2271b1;
+}
+
+@media (max-width: 768px) {
+  .vcw-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  
+  .vcw-row label {
+    min-width: auto;
+  }
+}
+
+/* Hide technical information from client-facing product pages */
+.single-product .product_meta,
+.single-product .woocommerce-product-details__short-description + .product_meta,
+.single-product .product_meta .sku_wrapper,
+.single-product .product_meta .posted_in {
+  display: none !important;
+}
+
+/* Hide SKU from product summary */
+.single-product .summary .sku {
+  display: none !important;
+}
+
+/* Hide category links from product meta */
+.single-product .product_meta .posted_in a {
+  display: none !important;
+}
+
+/* Hide any other technical metadata */
+.single-product .product_meta .wc-product-data {
+  display: none !important;
+}

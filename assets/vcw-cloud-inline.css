@@ -1,0 +1,828 @@
+
+/* Virak Cloud Woo – Cloud Instances responsive inline UI */
+.vcw-cloud { --gap: 12px; --radius: 14px; --shadow: 0 8px 24px rgba(0,0,0,.06); }
+.vcw-toolbar { display:flex; gap:var(--gap); align-items:center; flex-wrap:wrap; margin:12px 0 18px; }
+
+/* Instances Header */
+.vcw-instances-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.vcw-instances-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.vcw-instances-count {
+  background: #f1f5f9;
+  color: #64748b;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* No Instances State */
+.vcw-no-instances {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f8fafc;
+  border: 2px dashed #cbd5e1;
+  border-radius: 16px;
+  margin: 20px 0;
+}
+
+.vcw-no-instances-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.vcw-no-instances h3 {
+  margin: 0 0 12px 0;
+  font-size: 24px;
+  color: #374151;
+}
+
+.vcw-no-instances p {
+  margin: 0 0 24px 0;
+  color: #6b7280;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Enhanced Instance Cards */
+.vcw-instance-card { 
+  background: #fff; 
+  border: 1px solid #e6e8eb; 
+  border-radius: 16px; 
+  box-shadow: 0 4px 20px rgba(0,0,0,.08); 
+  margin: 0 0 24px; 
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.vcw-instance-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,.12);
+  transform: translateY(-2px);
+}
+
+.vcw-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 24px;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.vcw-instance-info {
+  flex: 1;
+}
+
+.vcw-instance-name {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+  line-height: 1.4;
+}
+
+.vcw-instance-meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.vcw-meta-item {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.vcw-meta-item strong {
+  color: #475569;
+  font-weight: 600;
+}
+
+.vcw-status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+}
+
+.vcw-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #94a3b8;
+}
+
+.vcw-status-indicator[data-status="running"] .vcw-status-dot,
+.vcw-status-indicator[data-status="up"] .vcw-status-dot {
+  background: #10b981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+
+.vcw-status-indicator[data-status="stopped"] .vcw-status-dot,
+.vcw-status-indicator[data-status="down"] .vcw-status-dot {
+  background: #ef4444;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+}
+
+.vcw-status-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+  text-transform: capitalize;
+}
+
+.vcw-card-body {
+  padding: 24px;
+}
+
+.vcw-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.vcw-action-group {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.vcw-action-group-title {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.vcw-action-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.vcw-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.vcw-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+.vcw-btn--icon {
+  padding: 10px 14px;
+}
+
+.vcw-btn-icon {
+  font-size: 14px;
+}
+
+.vcw-btn--success {
+  background: #22c55e;
+  color: white;
+  border-color: #22c55e;
+}
+
+.vcw-btn--success:hover {
+  background: #16a34a;
+  border-color: #16a34a;
+}
+
+.vcw-btn--warning {
+  background: #f97316;
+  color: white;
+  border-color: #f97316;
+}
+
+.vcw-btn--warning:hover {
+  background: #ea580c;
+  border-color: #ea580c;
+}
+
+.vcw-btn--primary {
+  background: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.vcw-btn--primary:hover {
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+.vcw-btn--info {
+  background: #0ea5e9;
+  color: white;
+  border-color: #0ea5e9;
+}
+
+.vcw-btn--info:hover {
+  background: #0284c7;
+  border-color: #0284c7;
+}
+
+.vcw-btn--secondary {
+  background: #64748b;
+  color: white;
+  border-color: #64748b;
+}
+
+.vcw-btn--secondary:hover {
+  background: #475569;
+  border-color: #475569;
+}
+
+.vcw-btn--danger {
+  background: #ef4444;
+  color: white;
+  border-color: #ef4444;
+}
+
+.vcw-btn--danger:hover {
+  background: #dc2626;
+  border-color: #dc2626;
+}
+
+/* Admin specific button fixes */
+.vcw-primary-actions .vcw-btn--warning {
+  background: #f97316;
+  color: white;
+  border-color: #f97316;
+}
+
+.vcw-primary-actions .vcw-btn--warning:hover {
+  background: #ea580c;
+  border-color: #ea580c;
+}
+
+.vcw-primary-actions .vcw-btn--success {
+  background: #22c55e;
+  color: white;
+  border-color: #22c55e;
+}
+
+.vcw-primary-actions .vcw-btn--success:hover {
+  background: #16a34a;
+  border-color: #16a34a;
+}
+
+/* Ensure all buttons have proper contrast */
+.vcw-btn {
+  color: white !important;
+  border: 1px solid transparent;
+  font-weight: 500;
+}
+
+.vcw-btn:hover {
+  color: white !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Fix power management buttons specifically */
+.vcw-primary-actions .vcw-btn {
+  background: #f97316 !important;
+  color: white !important;
+  border-color: #f97316 !important;
+}
+
+.vcw-primary-actions .vcw-btn:hover {
+  background: #ea580c !important;
+  border-color: #ea580c !important;
+}
+
+/* Override for start button */
+.vcw-primary-actions .vcw-btn[data-act="start"] {
+  background: #22c55e !important;
+  border-color: #22c55e !important;
+}
+
+.vcw-primary-actions .vcw-btn[data-act="start"]:hover {
+  background: #16a34a !important;
+  border-color: #16a34a !important;
+}
+
+/* Ensure button icons are visible */
+.vcw-btn-icon {
+  color: inherit !important;
+  opacity: 1 !important;
+}
+
+/* Force button colors in all contexts */
+.vcw-instance-card .vcw-btn {
+  color: white !important;
+  text-shadow: none !important;
+}
+
+.vcw-instance-card .vcw-btn--warning {
+  background: #f97316 !important;
+  border-color: #f97316 !important;
+  color: white !important;
+}
+
+.vcw-instance-card .vcw-btn--success {
+  background: #22c55e !important;
+  border-color: #22c55e !important;
+  color: white !important;
+}
+
+.vcw-instance-card .vcw-btn--primary {
+  background: #3b82f6 !important;
+  border-color: #3b82f6 !important;
+  color: white !important;
+}
+
+.vcw-instance-card .vcw-btn--info {
+  background: #0ea5e9 !important;
+  border-color: #0ea5e9 !important;
+  color: white !important;
+}
+
+.vcw-instance-card .vcw-btn--secondary {
+  background: #64748b !important;
+  border-color: #64748b !important;
+  color: white !important;
+}
+
+.vcw-instance-card .vcw-btn--danger {
+  background: #ef4444 !important;
+  border-color: #ef4444 !important;
+  color: white !important;
+}
+
+.vcw-inline { 
+  border-top: 1px dashed #e6e8eb; 
+  margin-top: 16px; 
+  padding-top: 16px; 
+}
+
+/* Rebuild UI Improvements */
+.vcw-rebuild-warning {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.vcw-rebuild-warning p {
+  margin: 0;
+  color: #856404;
+  font-weight: 500;
+}
+
+.vcw-image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.vcw-image-card {
+  background: #fff;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.vcw-image-card:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+  transform: translateY(-2px);
+}
+
+.vcw-image-header {
+  margin-bottom: 12px;
+}
+
+.vcw-image-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+  line-height: 1.3;
+}
+
+.vcw-image-details {
+  margin-bottom: 16px;
+}
+
+.vcw-image-desc {
+  margin: 0 0 12px 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.vcw-image-spec {
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.vcw-image-spec strong {
+  color: #334155;
+}
+
+.vcw-image-actions {
+  text-align: center;
+}
+
+.vcw-btn--rebuild {
+  width: 100%;
+  padding: 12px 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.vcw-btn--rebuild:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+/* Warning result card */
+.vcw-result--warning {
+  border-left: 4px solid #f59e0b;
+  background: #fffbeb;
+}
+
+.vcw-result--warning h4 {
+  color: #92400e;
+}
+
+/* Professional Instance Details Styling */
+.vcw-details-section {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.vcw-details-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.vcw-details-section h5 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #374151;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #3b82f6;
+  display: inline-block;
+}
+
+.vcw-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+}
+
+.vcw-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.vcw-detail-item.vcw-detail-full {
+  grid-column: 1 / -1;
+}
+
+.vcw-detail-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.vcw-detail-value {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1e293b;
+  word-break: break-word;
+}
+
+.vcw-detail-value code {
+  background: #e2e8f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 12px;
+}
+
+.vcw-detail-value.vcw-price {
+  color: #059669;
+  font-weight: 600;
+}
+
+.vcw-detail-value.vcw-availability.available {
+  color: #059669;
+  font-weight: 600;
+}
+
+.vcw-detail-value.vcw-availability.unavailable {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.vcw-detail-value.vcw-visibility.public {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.vcw-detail-value.vcw-visibility.private {
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.vcw-detail-value.vcw-recommendation.suggested {
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.vcw-detail-value.vcw-recommendation.not-suggested {
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.vcw-detail-value.vcw-requirement.required {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.vcw-detail-value.vcw-requirement.not-required {
+  color: #059669;
+  font-weight: 600;
+}
+
+.vcw-detail-value.vcw-app-type.ready-app {
+  color: #7c3aed;
+  font-weight: 600;
+}
+
+.vcw-detail-value.vcw-app-type.standard-image {
+  color: #6b7280;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .vcw-details-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .vcw-detail-item {
+    padding: 10px;
+  }
+}
+
+.vcw-muted { 
+  color: #6b7280; 
+  font-size: 12px; 
+  margin-top: 6px; 
+}
+
+.vcw-error { 
+  color: #d63638; 
+  font-size: 12px; 
+  background: #fef7f1; 
+  padding: 8px 12px; 
+  border-radius: 4px; 
+  border-left: 4px solid #d63638; 
+  margin-top: 6px; 
+}
+
+/* Result Cards */
+.vcw-result-card {
+  border: 1px solid #e6e8eb;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 12px 0;
+  background: #fff;
+}
+
+.vcw-result-card h4 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.vcw-result-card p {
+  margin: 0;
+  color: #666;
+}
+
+.vcw-result--success {
+  border-left: 4px solid #00a32a;
+  background: #f0f6fc;
+}
+
+.vcw-result--error {
+  border-left: 4px solid #d63638;
+  background: #fef7f1;
+}
+
+.vcw-result--warning {
+  border-left: 4px solid #dba617;
+  background: #fefcf0;
+}
+
+.vcw-result--info {
+  border-left: 4px solid #2271b1;
+  background: #f0f6fc;
+}
+
+/*
+ * Enhanced layout for the VM image selection when rebuilding an instance.
+ * Instead of a simple vertical list, images are displayed in a responsive
+ * grid. Each item shows the image name (and description, if present)
+ * alongside a rebuild button. The grid adapts to different screen sizes
+ * using auto-fill and a minimum width, making the rebuild list easier
+ * to scan and interact with. These styles complement the HTML markup
+ * generated in vcw-cloud-inline.js for image selection.
+ */
+.vcw-image-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+  margin: 12px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.vcw-image-item {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 70px;
+}
+
+.vcw-image-item .vcw-image-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.vcw-image-item .vcw-image-desc {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.vcw-image-item .vcw-image-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Status Badge */
+.vcw-status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.vcw-status-badge[data-status="running"],
+.vcw-status-badge[data-status="active"],
+.vcw-status-badge[data-status="started"],
+.vcw-status-badge[data-status="up"] {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.vcw-status-badge[data-status="stopped"],
+.vcw-status-badge[data-status="inactive"],
+.vcw-status-badge[data-status="down"] {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.vcw-status-badge[data-status="pending"],
+.vcw-status-badge[data-status="processing"] {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+/* Secondary Button Style */
+.vcw-btn--secondary {
+  background: #f3f4f6;
+  border-color: #d1d5db;
+  color: #374151;
+}
+
+.vcw-btn--secondary:hover {
+  background: #e5e7eb;
+}
+
+/* Button State Transitions */
+.vcw-btn {
+  transition: all 0.2s ease-in-out;
+}
+
+.vcw-btn[style*="display: none"] {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.vcw-btn:not([style*="display: none"]) {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Loading State */
+.vcw-btn.is-busy {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.vcw-btn.is-busy::after {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-left: 8px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.vcw-code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size:12px; background:#0f172a; color:#e2e8f0; padding:10px; border-radius:8px; overflow:auto; }
+
+/* Copy button styling for IP address and credential fields */
+.vcw-copy-btn {
+  margin-left: 6px;
+  font-size: 11px;
+  padding: 2px 6px;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  border-radius: 4px;
+  cursor: pointer;
+  line-height: 1;
+}
+.vcw-copy-btn:hover {
+  background: #f1f5f9;
+}
+
+/* Buttons */
+.vcw-btn { appearance:none; border:1px solid #e5e7eb; background:#fff; padding:6px 10px; border-radius:10px; cursor:pointer; }
+.vcw-btn:hover { background:#f8fafc; }
+.vcw-btn--danger { background:#fee2e2; border-color:#fecaca; }
+.vcw-btn--primary { background:#eef6ff; border-color:#bfdbfe; }
+.vcw-pill { padding:6px 10px; border-radius:999px; background:#f3f4f6; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .vcw-grid { grid-template-columns: 1fr; }
+  .vcw-kv { grid-template-columns: 120px 1fr; }
+}

@@ -1,0 +1,659 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Virak Cloud WooCommerce Integration 1.0.2\n"
+"POT-Creation-Date: 2024-01-01 12:00+0000\n"
+"PO-Revision-Date: 2024-01-01 12:00+0000\n"
+"Last-Translator: Virak Cloud Team\n"
+"Language-Team: Persian\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.0\n"
+"X-Domain: virakcloud-woo\n"
+
+msgid "Virak Cloud"
+msgstr "ویراک کلود"
+
+msgid "Settings"
+msgstr "تنظیمات"
+
+msgid "User Instances"
+msgstr "نمونه‌های کاربر"
+
+msgid "Setup Wizard"
+msgstr "راهنمای راه‌اندازی"
+
+msgid "Start"
+msgstr "شروع"
+
+msgid "Stop"
+msgstr "توقف"
+
+msgid "Reboot"
+msgstr "راه‌اندازی مجدد"
+
+msgid "Delete"
+msgstr "حذف"
+
+msgid "Credentials"
+msgstr "اعتبارنامه‌ها"
+
+msgid "Console"
+msgstr "کنسول"
+
+msgid "Snapshots"
+msgstr "اسنپ‌شات‌ها"
+
+msgid "Refresh Status"
+msgstr "تازه‌سازی وضعیت"
+
+msgid "Power Management"
+msgstr "مدیریت برق"
+
+msgid "Access & Management"
+msgstr "دسترسی و مدیریت"
+
+msgid "Advanced"
+msgstr "پیشرفته"
+
+msgid "View Credentials"
+msgstr "مشاهده اعتبارنامه‌ها"
+
+msgid "Open Console"
+msgstr "باز کردن کنسول"
+
+msgid "Rebuild with New Image"
+msgstr "بازسازی با تصویر جدید"
+
+msgid "Manage Snapshots"
+msgstr "مدیریت اسنپ‌شات‌ها"
+
+msgid "Refresh"
+msgstr "تازه‌سازی"
+
+msgid "Stop Instance"
+msgstr "توقف نمونه"
+
+msgid "Reboot Instance"
+msgstr "راه‌اندازی مجدد نمونه"
+
+msgid "Start Instance"
+msgstr "شروع نمونه"
+
+msgid "Service Selection"
+msgstr "انتخاب سرویس"
+
+msgid "Please select at least one service offering."
+msgstr "لطفاً حداقل یک پیشنهاد سرویس انتخاب کنید."
+
+msgid "Please select at least one network offering."
+msgstr "لطفاً حداقل یک پیشنهاد شبکه انتخاب کنید."
+
+msgid "Please select at least one VM image."
+msgstr "لطفاً حداقل یک تصویر ماشین مجازی انتخاب کنید."
+
+msgid "Service Offerings:"
+msgstr "پیشنهادات سرویس:"
+
+msgid "Network Offerings:"
+msgstr "پیشنهادات شبکه:"
+
+msgid "VM Images:"
+msgstr "تصاویر ماشین مجازی:"
+
+msgid "Select at least one VM plan to offer to customers. Use search to filter options."
+msgstr "حداقل یک پلان ماشین مجازی برای ارائه به مشتریان انتخاب کنید. از جستجو برای فیلتر کردن گزینه‌ها استفاده کنید."
+
+msgid "Select at least one network configuration for your VMs. Use search to filter options."
+msgstr "حداقل یک پیکربندی شبکه برای ماشین‌های مجازی خود انتخاب کنید. از جستجو برای فیلتر کردن گزینه‌ها استفاده کنید."
+
+msgid "Select at least one operating system image for your VMs. Use search to filter options."
+msgstr "حداقل یک تصویر سیستم عامل برای ماشین‌های مجازی خود انتخاب کنید. از جستجو برای فیلتر کردن گزینه‌ها استفاده کنید."
+
+msgid "instance(s)"
+msgstr "نمونه"
+
+msgid "No instances yet"
+msgstr "هنوز نمونه‌ای وجود ندارد"
+
+msgid "You haven't purchased any cloud instances yet. Browse our products to get started!"
+msgstr "هنوز هیچ نمونه ابری خریداری نکرده‌اید. محصولات ما را مرور کنید تا شروع کنید!"
+
+msgid "Browse Products"
+msgstr "مرور محصولات"
+
+msgid "Delete Instance"
+msgstr "حذف نمونه"
+
+msgid "Show Instance Details"
+msgstr "نمایش جزئیات نمونه"
+
+msgid "Details"
+msgstr "جزئیات"
+
+msgid "Refresh Status Only"
+msgstr "فقط بروزرسانی وضعیت"
+
+# Additional wizard strings introduced in later versions
+msgid "Step 1: Connect to Virak Cloud API"
+msgstr "مرحله ۱: اتصال به API ویرک‌کلود"
+
+msgid "Enter your Virak Cloud API credentials to connect the plugin to your cloud infrastructure."
+msgstr "اعتبارنامهٔ API ویرک‌کلود خود را وارد کنید تا افزونه به زیرساخت ابری شما متصل شود."
+
+msgid "API Base URL"
+msgstr "آدرس پایهٔ API"
+
+msgid "API Token"
+msgstr "توکن API"
+
+msgid "The base URL for your Virak Cloud API endpoint."
+msgstr "آدرس پایهٔ پایان‌نقطهٔ API ویرک‌کلود شما."
+
+msgid "Your Virak Cloud API authentication token."
+msgstr "توکن احراز هویت API ویرک‌کلود شما."
+
+msgid "Test Connection"
+msgstr "آزمایش اتصال"
+
+msgid "Save & Continue"
+msgstr "ذخیره و ادامه"
+
+msgid "Connection successful! API token is valid."
+msgstr "اتصال موفق بود! توکن API معتبر است."
+
+msgid "Connection failed. Invalid API token or endpoint (HTTP %d)."
+msgstr "اتصال ناموفق. توکن API یا آدرس پایان‌نقطه نامعتبر است (HTTP %d)."
+
+msgid "User:"
+msgstr "کاربر:"
+
+msgid "Order:"
+msgstr "سفارش:"
+
+msgid "Zone:"
+msgstr "منطقه:"
+
+msgid "ID:"
+msgstr "شناسه:"
+
+msgid "Guest"
+msgstr "مهمان"
+
+msgid "No instances yet."
+msgstr "هنوز نمونه‌ای وجود ندارد."
+
+msgid "Your Cloud Instances"
+msgstr "نمونه‌های ابری شما"
+
+msgid "Please log in."
+msgstr "لطفاً وارد شوید."
+
+msgid "No permission."
+msgstr "بدون مجوز."
+
+msgid "Previous"
+msgstr "قبلی"
+
+msgid "Next"
+msgstr "بعدی"
+
+msgid "Go to Dashboard"
+msgstr "رفتن به داشبورد"
+
+msgid "Advanced Settings"
+msgstr "تنظیمات پیشرفته"
+
+msgid "API Connection"
+msgstr "اتصال API"
+
+msgid "Zone Selection"
+msgstr "انتخاب منطقه"
+
+msgid "Service Selection"
+msgstr "انتخاب خدمات"
+
+msgid "Product Sync"
+msgstr "همگام‌سازی محصولات"
+
+msgid "Finish Setup"
+msgstr "پایان راه‌اندازی"
+
+msgid "Setup Complete!"
+msgstr "راه‌اندازی کامل شد!"
+
+msgid "What's Next?"
+msgstr "بعدی چیست؟"
+
+msgid "View Products"
+msgstr "مشاهده محصولات"
+
+msgid "Visit Store"
+msgstr "بازدید از فروشگاه"
+
+msgid "Manage Instances"
+msgstr "مدیریت نمونه‌ها"
+
+msgid "Are you sure you want to delete"
+msgstr "آیا مطمئن هستید که می‌خواهید حذف کنید"
+
+msgid "This action cannot be undone and will permanently remove the instance and all its data."
+msgstr "این عمل قابل بازگشت نیست و نمونه و تمام داده‌های آن را به طور دائمی حذف خواهد کرد."
+
+msgid "Are you sure you want to create these products?"
+msgstr "آیا مطمئن هستید که می‌خواهید این محصولات را ایجاد کنید؟"
+
+# Labels for instance and service details on the status card
+msgid "Id"
+msgstr "شناسه"
+
+msgid "Name"
+msgstr "نام"
+
+msgid "Has Image Requirement"
+msgstr "نیاز به تصویر دارد"
+
+msgid "Is Available"
+msgstr "در دسترس"
+
+msgid "Is Public"
+msgstr "عمومی"
+
+msgid "Suggested"
+msgstr "پیشنهادی"
+
+msgid "Category"
+msgstr "دسته‌بندی"
+
+msgid "Description"
+msgstr "توضیحات"
+
+msgid "Hourly Price Up"
+msgstr "هزینه ساعتی (روشن)"
+
+msgid "Hourly Price Down"
+msgstr "هزینه ساعتی (خاموش)"
+
+msgid "CPU Cores"
+msgstr "تعداد هسته CPU"
+
+msgid "CPU Speed"
+msgstr "سرعت CPU"
+
+msgid "Disk Size"
+msgstr "حجم دیسک"
+
+msgid "Network Rate"
+msgstr "سرعت شبکه"
+
+msgid "Disk IOPS"
+msgstr "IOPS دیسک"
+
+msgid "true"
+msgstr "بله"
+
+msgid "false"
+msgstr "خیر"
+
+# Terms used in the Cloud Connectivity results table
+msgid "Endpoint"
+msgstr "نقطه پایان"
+
+msgid "HTTP"
+msgstr "HTTP"
+
+msgid "URL"
+msgstr "URL"
+
+msgid "Results"
+msgstr "نتایج"
+
+msgid "Base"
+msgstr "پایه"
+
+msgid "Token"
+msgstr "توکن"
+
+# Wizard steps and labels
+msgid "Virak Cloud Setup Wizard"
+msgstr "راهنمای راه‌اندازی ویراک‌کلود"
+
+msgid "Step 2: Select Your Datacenter Zone"
+msgstr "مرحله ۲: انتخاب منطقه دیتاسنتر"
+
+msgid "Choose the datacenter zone where you want to provision cloud instances. This will determine the location of your customers' VMs."
+msgstr "منطقه دیتاسنتر مورد نظر برای آماده‌سازی نمونه‌های ابری را انتخاب کنید. این تعیین‌کننده مکان ماشین‌های مجازی مشتریان شما خواهد بود."
+
+msgid "Datacenter Zone"
+msgstr "منطقه دیتاسنتر"
+
+msgid "Loading zones..."
+msgstr "در حال بارگذاری مناطق..."
+
+msgid "Select the zone where your cloud infrastructure is located."
+msgstr "منطقه‌ای که زیرساخت ابری شما در آن قرار دارد را انتخاب کنید."
+
+msgid "Step 3: Configure Service Offerings"
+msgstr "مرحله ۳: پیکربندی طرح‌های خدمات"
+
+msgid "Select which service offerings, network configurations, and VM images you want to make available to your customers."
+msgstr "طرح‌های خدمات، پیکربندی‌های شبکه و تصاویر ماشین مجازی مورد نظر برای ارائه به مشتریان خود را انتخاب کنید."
+
+msgid "Service Offerings (VM Plans)"
+msgstr "طرح‌های خدمات (برنامه‌های ماشین مجازی)"
+
+msgid "Search services..."
+msgstr "جستجوی خدمات..."
+
+msgid "Select All"
+msgstr "انتخاب همه"
+
+msgid "Clear All"
+msgstr "پاک کردن همه"
+
+msgid "Loading available service offerings..."
+msgstr "در حال بارگذاری طرح‌های خدمات موجود..."
+
+msgid "Select the VM plans you want to offer to customers. Use search to filter options."
+msgstr "برنامه‌های ماشین مجازی که می‌خواهید به مشتریان ارائه دهید را انتخاب کنید. برای فیلتر کردن گزینه‌ها از جستجو استفاده کنید."
+
+msgid "Network Offerings"
+msgstr "طرح‌های شبکه"
+
+msgid "Search networks..."
+msgstr "جستجوی شبکه‌ها..."
+
+msgid "Loading available network offerings..."
+msgstr "در حال بارگذاری طرح‌های شبکه موجود..."
+
+msgid "Select the network configurations you want to offer. Use search to filter options."
+msgstr "پیکربندی‌های شبکه‌ای که می‌خواهید ارائه دهید را انتخاب کنید. برای فیلتر کردن گزینه‌ها از جستجو استفاده کنید."
+
+msgid "VM Images"
+msgstr "تصاویر ماشین مجازی"
+
+msgid "Search images..."
+msgstr "جستجوی تصاویر..."
+
+msgid "Loading available VM images..."
+msgstr "در حال بارگذاری تصاویر ماشین مجازی موجود..."
+
+msgid "Select the VM images you want to offer. Use search to filter options."
+msgstr "تصاویر ماشین مجازی که می‌خواهید ارائه دهید را انتخاب کنید. برای فیلتر کردن گزینه‌ها از جستجو استفاده کنید."
+
+msgid "Step 4: Sync Products"
+msgstr "مرحله ۴: همگام‌سازی محصولات"
+
+msgid "Generate WooCommerce products for selected services."
+msgstr "تولید محصولات ووکامرس برای خدمات انتخاب‌شده."
+
+msgid "Create Products"
+msgstr "ایجاد محصولات"
+
+msgid "No services selected for sync."
+msgstr "هیچ خدمتی برای همگام‌سازی انتخاب نشده است."
+
+msgid "Failed to sync products"
+msgstr "همگام‌سازی محصولات با شکست مواجه شد"
+
+msgid "Enter a name for the new snapshot"
+msgstr "یک نام برای اسنپ‌شات جدید وارد کنید"
+
+msgid "Snapshot ID missing."
+msgstr "شناسه اسنپ‌شات موجود نیست."
+
+msgid "Are you sure you want to revert to this snapshot? This will restore the VM to the selected snapshot state."
+msgstr "آیا مطمئن هستید که می‌خواهید به این اسنپ‌شات بازگردید؟ این عملیات ماشین مجازی را به حالت اسنپ‌شات انتخاب‌شده بازمی‌گرداند."
+
+msgid "Are you sure you want to delete this snapshot? This action cannot be undone."
+msgstr "آیا مطمئن هستید که می‌خواهید این اسنپ‌شات را حذف کنید؟ این عملیات قابل بازگشت نیست."
+
+msgid "Image ID missing."
+msgstr "شناسه تصویر موجود نیست."
+
+msgid "Rebuilding will replace the VM with the selected image. Continue?"
+msgstr "بازسازی باعث جایگزینی ماشین مجازی با تصویر انتخاب‌شده می‌شود. ادامه می‌دهید؟"
+
+msgid "Virak Cloud for WooCommerce"
+msgstr "ویراک کلود برای ووکامرس"
+
+msgid "Resell Virak Cloud VM services via WooCommerce with inline instance management for customers and admins. Features VM configurator, provisioning, and real-time instance control."
+msgstr "فروش خدمات سرور مجازی ویراک کلود از طریق ووکامرس با امکان مدیریت آنی سرور برای مشتریان و مدیران. دارای پیکربندی سرویس، تأمین و کنترل زمان واقعی است."
+
+msgid "Cloud Connectivity"
+msgstr "اتصال ابری"
+
+msgid "Logs"
+msgstr "گزارش‌ها"
+
+msgid "Queue"
+msgstr "صف"
+
+msgid "Rebuild"
+msgstr "بازسازی"
+
+msgid "Rebuild Instance"
+msgstr "بازسازی نمونه"
+
+msgid "Select a VM image below to rebuild this instance. Rebuilding will replace the current disk with the selected image and may cause data loss."
+msgstr "یک تصویر ماشین مجازی از لیست زیر برای بازسازی این نمونه انتخاب کنید. بازسازی دیسک فعلی را با تصویر انتخاب‌شده جایگزین می‌کند و ممکن است باعث از دست رفتن داده‌ها شود."
+
+msgid "No VM images available for this zone."
+msgstr "هیچ تصویر ماشین مجازی برای این منطقه موجود نیست."
+
+# Admin: Logs UI table headings
+msgid "Time"
+msgstr "زمان"
+
+msgid "Level"
+msgstr "سطح"
+
+msgid "Message"
+msgstr "پیام"
+
+msgid "Context"
+msgstr "زمینه"
+
+msgid "Refresh"
+msgstr "تازه‌سازی"
+
+# Admin: Queue UI labels
+msgid "Status"
+msgstr "وضعیت"
+
+msgid "Count"
+msgstr "تعداد"
+
+msgid "Sync Now"
+msgstr "همگام‌سازی اکنون"
+
+msgid "Retry Failed"
+msgstr "تلاش مجدد برای شکست‌خورده‌ها"
+
+msgid "Clear Queue"
+msgstr "پاک کردن صف"
+
+msgid "Archive Removed Products"
+msgstr "بایگانی محصولات حذف‌شده"
+
+msgid "Pending"
+msgstr "در انتظار"
+
+msgid "Done"
+msgstr "انجام‌شده"
+
+msgid "Failed"
+msgstr "ناموفق"
+
+msgid "Clear queue?"
+msgstr "آیا صف پاک شود؟"
+
+msgid "Archive removed products (set to draft)?"
+msgstr "آیا محصولات حذف‌شده بایگانی شوند (به حالت پیش‌نویس)؟"
+
+msgid "Archived:"
+msgstr "بایگانی شده:"
+
+# Admin headings
+msgid "Virak Cloud — Logs"
+msgstr "ویراک کلود — گزارش‌ها"
+
+msgid "Virak Cloud — Queue"
+msgstr "ویراک کلود — صف"
+
+# Additional untranslated strings for full Persian coverage
+
+msgid "Copy"
+msgstr "کپی"
+
+msgid "Copy IP"
+msgstr "کپی آدرس IP"
+
+msgid "UP"
+msgstr "روشن"
+
+msgid "RUNNING"
+msgstr "روشن"
+
+msgid "STOPPED"
+msgstr "خاموش"
+
+msgid "Base URL"
+msgstr "آدرس پایه"
+
+msgid "Run Selected Tests"
+msgstr "اجرای آزمون‌های انتخاب‌شده"
+
+msgid "Tests"
+msgstr "آزمون‌ها"
+
+msgid "Please enter Base URL."
+msgstr "لطفاً آدرس پایه را وارد کنید."
+
+msgid "Virak Cloud — Cloud Connectivity"
+msgstr "ویراک کلود — اتصال ابری"
+
+msgid "Virak Cloud — User Instances"
+msgstr "ویراک کلود — نمونه‌های کاربر"
+
+msgid "This will add new products to your WooCommerce store."
+msgstr "این کار محصولات جدیدی به فروشگاه WooCommerce شما اضافه خواهد کرد."
+
+msgid "CPU"
+msgstr "پردازنده"
+
+msgid "Memory"
+msgstr "حافظه"
+
+msgid "Storage"
+msgstr "ذخیره‌سازی"
+
+msgid "Network"
+msgstr "شبکه"
+
+msgid "Bandwidth"
+msgstr "پهنای باند"
+
+msgid "Price"
+msgstr "قیمت"
+
+msgid "OS"
+msgstr "سیستم‌عامل"
+
+msgid "Format"
+msgstr "فرمت"
+
+msgid "Size"
+msgstr "اندازه"
+
+msgid "Architecture"
+msgstr "معماری"
+
+msgid "Version"
+msgstr "نسخه"
+
+msgid "Type"
+msgstr "نوع"
+
+msgid "Subnet"
+msgstr "زیرشبکه"
+
+msgid "Gateway"
+msgstr "دروازه"
+
+msgid "VLAN"
+msgstr "VLAN"
+
+msgid "cores"
+msgstr "هسته"
+
+msgid "Speed"
+msgstr "سرعت"
+
+msgid "IOPS"
+msgstr "عملیات ورودی/خروجی"
+
+msgid "Price Up"
+msgstr "قیمت بالا"
+
+msgid "Price Down"
+msgstr "قیمت پایین"
+
+msgid "Category"
+msgstr "دسته‌بندی"
+
+msgid "Suggested"
+msgstr "پیشنهادی"
+
+msgid "Ready App"
+msgstr "اپ آماده"
+
+msgid "Type"
+msgstr "نوع"
+
+msgid "OS Name"
+msgstr "نام سیستم‌عامل"
+
+msgid "CPU Req"
+msgstr "نیاز پردازنده"
+
+msgid "Speed Req"
+msgstr "نیاز سرعت"
+
+msgid "Memory Req"
+msgstr "نیاز حافظه"
+
+msgid "Disk Req"
+msgstr "نیاز دیسک"
+
+msgid "Network"
+msgstr "شبکه"
+
+msgid "Zone"
+msgstr "منطقه"
+
+msgid "Network"
+msgstr "شبکه"
+
+msgid "IP Address"
+msgstr "آدرس IP"
+
+msgid "Public IP"
+msgstr "IP عمومی"
+
+msgid "Instance Network"
+msgstr "شبکه نمونه"
+
+msgid "Network Information"
+msgstr "اطلاعات شبکه"
+
+msgid "Are you sure you want to delete"
+msgstr "آیا مطمئن هستید که می‌خواهید حذف کنید"
+
+msgid "This action cannot be undone and will permanently remove the instance and all its data."
+msgstr "این عمل قابل بازگشت نیست و نمونه و تمام داده‌های آن را به طور دائمی حذف خواهد کرد."
+
+msgid "Are you sure you want to create these products?"
+msgstr "آیا مطمئن هستید که می‌خواهید این محصولات را ایجاد کنید؟"

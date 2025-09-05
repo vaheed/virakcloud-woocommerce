@@ -1,0 +1,160 @@
+/* Persian Language RTL Support */
+
+/*
+ * Load the Vazirmatn font from Google Fonts. Vazirmatn (also known as
+ * "Vazir Matn") is a modern Persian typeface that provides excellent
+ * legibility for Farsi scripts. Including this import at the top of
+ * the stylesheet ensures that the browser fetches the font when the
+ * plugin is used in a Persian locale. The font is loaded with
+ * weights 400 and 700 to support regular and bold text.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+[lang="fa-IR"],
+[lang="fa"],
+.rtl,
+.rtl * {
+    direction: rtl;
+    text-align: right;
+    /* Use Vazirmatn as the primary font for Persian text. Fallback to
+       sans-serif in case the font fails to load. */
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+/* RTL specific adjustments for the wizard */
+[lang="fa-IR"] .vcw-wizard-steps,
+[lang="fa"] .vcw-wizard-steps {
+    flex-direction: row-reverse;
+}
+
+[lang="fa-IR"] .vcw-wizard-steps::before,
+[lang="fa"] .vcw-wizard-steps::before {
+    left: auto;
+    right: 0;
+}
+
+[lang="fa-IR"] .vcw-wizard-navigation,
+[lang="fa"] .vcw-wizard-navigation {
+    flex-direction: row-reverse;
+}
+
+[lang="fa-IR"] .vcw-form-actions,
+[lang="fa"] .vcw-form-actions {
+    flex-direction: row-reverse;
+}
+
+[lang="fa-IR"] .vcw-selection-controls,
+[lang="fa"] .vcw-selection-controls {
+    flex-direction: row-reverse;
+}
+
+/* RTL for instance cards */
+[lang="fa-IR"] .vcw-card-head,
+[lang="fa"] .vcw-card-head {
+    flex-direction: row-reverse;
+}
+
+[lang="fa-IR"] .vcw-actions,
+[lang="fa"] .vcw-actions {
+    flex-direction: row-reverse;
+}
+
+/* RTL for selection items */
+[lang="fa-IR"] .vcw-selection-item-content,
+[lang="fa"] .vcw-selection-item-content {
+    flex-direction: row-reverse;
+}
+
+[lang="fa-IR"] .vcw-selection-item input[type="checkbox"],
+[lang="fa"] .vcw-selection-item input[type="checkbox"] {
+    margin-left: 12px;
+    margin-right: 0;
+}
+
+/* RTL for navigation buttons */
+[lang="fa-IR"] .vcw-wizard-next::after,
+[lang="fa"] .vcw-wizard-next::after {
+    content: " ←";
+}
+
+[lang="fa-IR"] .vcw-wizard-next::before,
+[lang="fa"] .vcw-wizard-next::before {
+    content: "";
+}
+
+[lang="fa-IR"] .vcw-wizard-navigation .button-secondary::before,
+[lang="fa"] .vcw-wizard-navigation .button-secondary::before {
+    content: "→ ";
+}
+
+[lang="fa-IR"] .vcw-wizard-navigation .button-secondary::after,
+[lang="fa"] .vcw-wizard-navigation .button-secondary::after {
+    content: "";
+}
+
+/* Persian font support */
+[lang="fa-IR"],
+[lang="fa"] {
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+/* RTL for status badges */
+[lang="fa-IR"] .vcw-status-badge,
+[lang="fa"] .vcw-status-badge {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* RTL for form labels */
+[lang="fa-IR"] .vcw-form-row label,
+[lang="fa"] .vcw-form-row label {
+    text-align: right;
+}
+
+/* RTL for help text */
+[lang="fa-IR"] .vcw-form-help,
+[lang="fa"] .vcw-form-help {
+    text-align: right;
+}
+
+/* RTL for step titles */
+[lang="fa-IR"] .vcw-step-title,
+[lang="fa"] .vcw-step-title {
+    text-align: center;
+}
+
+/* RTL for search inputs */
+[lang="fa-IR"] .vcw-search-input,
+[lang="fa"] .vcw-search-input {
+    text-align: right;
+}
+
+/* RTL for item specs */
+[lang="fa-IR"] .vcw-item-specs span,
+[lang="fa"] .vcw-item-specs span {
+    margin-right: 0;
+    margin-left: 16px;
+}
+
+[lang="fa-IR"] .vcw-item-specs span:last-child,
+[lang="fa"] .vcw-item-specs span:last-child {
+    margin-left: 0;
+}
+
+/* Enhanced confirmation dialogs for Persian */
+[lang="fa-IR"] .vcw-confirmation-dialog,
+[lang="fa"] .vcw-confirmation-dialog {
+    text-align: right;
+    direction: rtl;
+}
+
+[lang="fa-IR"] .vcw-confirmation-dialog .button,
+[lang="fa"] .vcw-confirmation-dialog .button {
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+[lang="fa-IR"] .vcw-confirmation-dialog .button:last-child,
+[lang="fa"] .vcw-confirmation-dialog .button:last-child {
+    margin-right: 0;
+}
