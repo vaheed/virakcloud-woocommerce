@@ -42,7 +42,6 @@ vendor/
 composer.lock
 
 # Build artifacts
-dist/
 build/
 *.zip
 *.tar.gz
